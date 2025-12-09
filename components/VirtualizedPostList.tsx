@@ -42,7 +42,7 @@ export default function VirtualizedPostList({ initial, totalCount, isAdmin = fal
             let next = prev.slice();
             switch (payload.eventType) {
               case 'INSERT':
-                if (isAdmin || (newRecord?.is_public && newRecord?.published)) {
+                if (newRecord && (isAdmin || (newRecord.is_public && newRecord.published))) {
                   next = [newRecord, ...next];
                 }
                 break;
