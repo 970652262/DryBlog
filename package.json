@@ -2,6 +2,7 @@
   "name": "simple-supabase-blog",
   "private": true,
   "version": "0.1.0",
+  "packageManager": "pnpm@10.18.3",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
